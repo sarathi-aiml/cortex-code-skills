@@ -1,0 +1,14 @@
+{
+  "name": "cortex-code-skills",
+  "version": "1.0.0",
+  "description": "Collection of Cortex code skills and CLI to install them.",
+  "main": "index.js",
+  "bin": {
+    "cortex-code-skills": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
