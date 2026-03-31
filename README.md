@@ -1,5 +1,5 @@
 # Cortex Code Skills
-A repository containing Cortex code skills, with a built-in CLI tool to install them into your project.
+A repository containing Cortex code skills, with a built-in CLI tool to install them into your project..
 
 ## Installation
 You do not need to install this package locally to use it. You can run it directly using `npx`:
