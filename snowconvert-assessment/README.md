@@ -49,7 +49,8 @@ Once installed, provide the path to your SnowConvert reports directory and an ou
 
 | Role | Name |
 |------|------|
-| Author | karthickgoleads |
+| Author | Sarathi Balakrishnan |
+| Contributors | Malini, Sarathi |
 
 ---
 *Part of the [Cortex Code Skills](https://github.com/sarathi-aiml/cortex-code-skills) collection · [Snowflake Cortex Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-code)*
