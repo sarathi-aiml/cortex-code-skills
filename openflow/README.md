@@ -46,7 +46,8 @@ Once installed, the skill will validate your Openflow session and profile before
 
 | Role | Name |
 |------|------|
-| Author | karthickgoleads |
+| Author | Sarathi Balakrishnan |
+| Contributors | Malini, Sarathi |
 
 ---
 *Part of the [Cortex Code Skills](https://github.com/sarathi-aiml/cortex-code-skills) collection · [Snowflake Cortex Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-code)*
