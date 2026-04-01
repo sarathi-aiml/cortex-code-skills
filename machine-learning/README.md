@@ -57,7 +57,8 @@ Once installed, describe your ML task in plain language — "train a classifier 
 
 | Role | Name |
 |------|------|
-| Author | karthickgoleads |
+| Author | Sarathi Balakrishnan |
+| Contributors | Malini, Sarathi |
 
 ---
 *Part of the [Cortex Code Skills](https://github.com/sarathi-aiml/cortex-code-skills) collection · [Snowflake Cortex Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-code)*
