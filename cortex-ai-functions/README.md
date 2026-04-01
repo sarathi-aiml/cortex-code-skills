@@ -1,39 +1,54 @@
 # Cortex AI Functions
 
-Snowflake Cortex AI Functions skills bundle for text, image, & document analytics.
+> Use Snowflake Cortex AI Functions for text and image analytics — classify, extract, summarize, translate, embed, redact, parse documents, and run custom LLM prompts directly in SQL.
 
-## Taxonomy
+## Overview
 
-The `cortex-ai-functions` skills exosystem consists of a main problem-to-solution router for intention detections (either atomic function(s) or custom workflow(s)), elevated high-level refs/ with curated functions docs, and nested purpose-built workflows with their own decomposed refs/ for clarifying nuances.
+This skill is the entry point for all Snowflake Cortex AI Function tasks. It detects your intent — whether you want to classify content, extract structured data from PDFs, run sentiment analysis, or process documents at scale — and routes you to the right function reference or workflow. It targets the full suite of `AI_*` SQL functions available in Snowflake Cortex.
 
+## What It Does
+
+- Route to the correct Cortex AI Function or workflow based on your described task
+- Classify text or images into categories with `AI_CLASSIFY`
+- Extract structured fields from text or documents with `AI_EXTRACT`
+- Filter rows with natural language conditions using `AI_FILTER`
+- Summarize and aggregate insights across many rows with `AI_SUMMARIZE_AGG` and `AI_AGG`
+- Parse PDFs and images using `AI_PARSE_DOCUMENT` (OCR and structured extraction)
+- Process documents at scale through the Document Intelligence workflow — with pricing displayed and test-before-batch safeguards
+- Run custom LLM prompts in SQL using `AI_COMPLETE`
+
+## When to Use
+
+- You want to apply AI to a column of text, a set of documents, or image files stored on a Snowflake stage
+- You need to process invoices, contracts, receipts, or forms and extract structured data
+- You are unsure which Cortex AI Function fits your use case and want the AI to help you choose
+- You need to classify, filter, translate, embed, or redact text directly in SQL
+
+## How to Use
+
+Install this skill:
+```bash
+# Cortex Code CLI
+npx cortex-code-skills install cortex-ai-functions
+
+# Claude Code CLI
+npx cortex-code-skills install cortex-ai-functions --claude
 ```
-cortex-ai-functions/
-├── SKILL.md                          # Main routing skill
-├── README.md                         # For humans.. ;)
-└── references/                       # AI Functions docs & tips
-|   ├── ai-classify.md
-|   ├── ai-complete.md
-|   ├── ai-extract.md
-|   ├── ai-filter.md
-|   ├── ai-parse-doc.md
-|   └── ai-summ-agg.md
-└── document-intelligence/            # "Document intelligence" wofklows -- extraction, parsing, vis-analytics
-```
 
-### Functions (atomic)
+Once installed, describe what you want to do with your data — "extract fields from invoices on a stage", "classify support tickets", "summarize customer reviews". The skill detects your intent and either routes you directly to the right function reference or presents a menu of all available AI functions to help you choose.
 
-| Function | Category | Input | Output | Use Case |
-|----------|----------|-------|--------|----------|
-| **AI_CLASSIFY** | Classification | text/image | label(s) | Categorize, tag, route tickets, sentiment |
-| **AI_FILTER** | Filtering | text/image | boolean | Yes/no conditions, semantic joins |
-| **AI_EXTRACT** | Extraction | text/file | JSON object | Structured fields from documents |
-| **AI_PARSE_DOCUMENT** | Parsing | file | markdown/text | Full document OCR, layout preservation |
-| **AI_AGG** | Aggregation | text column | summary | Custom multi-row aggregation |
-| **AI_SUMMARIZE_AGG** | Aggregation | text column | summary | General-purpose summarization |
-| **AI_COMPLETE** | Generation | prompt/image | text/JSON | Custom LLM tasks, vision analysis |
+## Files & Structure
 
-### Workflows -- nested sub-skills
+| Folder | Description |
+|--------|-------------|
+| `document-intelligence/` | End-to-end workflow for processing and extracting data from files at scale |
+| `references/` | Per-function reference files: ai-classify.md, ai-extract.md, ai-filter.md, ai-parse-doc.md, ai-summ-agg.md, ai-complete.md |
 
-| Workflow | Description | Route |
-|----------|-------------|-------|
-| Document Intelligence | End-to-end document processing pipelines | `document-intelligence/SKILL.md` |
+## Author & Contributors
+
+| Role | Name |
+|------|------|
+| Author | karthickgoleads |
+
+---
+*Part of the [Cortex Code Skills](https://github.com/sarathi-aiml/cortex-code-skills) collection · [Snowflake Cortex Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-code)*
