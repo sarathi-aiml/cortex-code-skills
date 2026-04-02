@@ -56,6 +56,7 @@ Once installed, tell the AI what you want — "create a dynamic table for my sal
 |------|------|
 | Author | Sarathi Balakrishnan |
 | Contributors | Malini, Sarathi |
+| Version | v1.0.0 |
 
 ---
 *Part of the [Cortex Code Skills](https://github.com/sarathi-aiml/cortex-code-skills) collection · [Snowflake Cortex Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-code)*
