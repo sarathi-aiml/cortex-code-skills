@@ -48,6 +48,7 @@ Once installed, tell the AI which objects you want to share and who should have 
 |------|------|
 | Author | Sarathi Balakrishnan |
 | Contributors | Malini, Sarathi |
+| Version | v1.0.0 |
 
 ---
 *Part of the [Cortex Code Skills](https://github.com/sarathi-aiml/cortex-code-skills) collection · [Snowflake Cortex Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-code)*
